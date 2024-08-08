@@ -1,0 +1,16 @@
+div#ramkaobrazka{
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    max-width:700px;
+}
+
+img.obrazek
+{
+    width: 100%;
+
+}
+
+#tytul{
+    text-align: center;
+}

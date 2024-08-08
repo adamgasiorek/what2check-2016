@@ -1,0 +1,23 @@
+.aktywnoscjakas{
+    float: left;
+    width:33%;
+}
+
+.niepodobasie{
+    color: red;
+}
+.dosprawdzenia{
+    color: rgb(255, 227, 102);
+}
+.podobasie{
+    color: green;
+}
+
+.aktywny{
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+.nieaktywny{
+    color: silver;
+    font-size: 1vw;
+}

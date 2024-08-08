@@ -1,0 +1,93 @@
+.chart {
+    list-style: none;
+    zoom: 1;
+    width: 90%;
+    padding-left: 0;
+}
+
+.chart:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+.chart li {
+    height: 35px;
+    margin-top: 18px;
+
+    position: relative;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.chart li:before {
+    color: #fff;
+    content: attr(title);
+    left: 5px;
+    position: absolute
+}
+
+.chart li.title:before {
+    color: black;
+    font-weight: bold;
+    left: 0;
+}
+
+.chart li:first-child {
+    margin-top: 0
+}
+
+.chart li .bar {
+    background: black;
+    height: 100%;
+
+}
+
+.chart li .number {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 5px;
+    position: absolute;
+    top: 0px;
+}
+
+.chart li.past .bar {
+    background: #aaa;
+}
+
+.chart li.past .number {
+    color: #aaa
+}
+
+@media screen and (max-width: 480px) {
+    .chart li {
+        height: auto;
+        margin-top: -10px;
+    }
+
+    .chart li:before {
+        color: black;
+        display: block;
+        left: 0;
+        position: relative
+    }
+
+    .chart li.title:before {
+        border-bottom: 1px solid
+    }
+
+    .chart li .bar {
+        height: 23px
+    }
+
+    .chart li .number {
+        display: block;
+        left: 0 !important;
+        padding-left: 0;
+        position: relative;
+        padding-bottom: 10px;
+    }
+}
